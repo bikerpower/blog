@@ -1,0 +1,9 @@
+<h1>Welcome to the best blog about ruby</h1>
+
+<ul>
+	<% @articles.each do |article| %>
+		<li>
+			<a href="<%= article.id %>"> <%= article.id %> <%= article.title %> </a>
+		</li>	
+	<% end %>
+</ul>
